@@ -40,14 +40,14 @@ Alternatively you can directly add source files to your project.
 
 ## Usage
 
-1. Change `Custom Class` name at Storyboard and link the image view object to your View Controller class
+* Change `Custom Class` name at Storyboard and link the image view object to your View Controller class
 
 <p align="center">
   <img src="http://s9.postimg.org/61wrm1173/NZFade_Image_View.png" alt="NZFadeImageView" title="NZFadeImageView">
 </p>
 
 
-2. Simple example of use in `UIViewController.m`:
+* Simple example of use in `UIViewController.m`:
 
 ```objective-c
 @interface UIViewController ()
@@ -84,7 +84,7 @@ Alternatively you can directly add source files to your project.
 @end
 ```
 
-3. Change animation duration or/and animate interval:
+* Change animation duration or/and animate interval:
 
 ```objective-c
 - (void)viewDidLoad

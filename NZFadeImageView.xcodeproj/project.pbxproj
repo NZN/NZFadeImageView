@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8A24592186369640020A7D3 /* NZFadeImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A24591186369640020A7D3 /* NZFadeImageView.m */; };
 		F8D1EDEE18632E1B0050BE5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D1EDED18632E1B0050BE5D /* Foundation.framework */; };
 		F8D1EDF018632E1B0050BE5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D1EDEF18632E1B0050BE5D /* CoreGraphics.framework */; };
 		F8D1EDF218632E1B0050BE5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D1EDF118632E1B0050BE5D /* UIKit.framework */; };
@@ -16,11 +17,12 @@
 		F8D1EE51186330FF0050BE5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D1EE47186330FF0050BE5D /* Images.xcassets */; };
 		F8D1EE52186330FF0050BE5D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8D1EE49186330FF0050BE5D /* InfoPlist.strings */; };
 		F8D1EE53186330FF0050BE5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1EE4B186330FF0050BE5D /* main.m */; };
-		F8D1EE58186331930050BE5D /* NZFadeImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1EE57186331930050BE5D /* NZFadeImageView.m */; };
 		F8D1EE5B186333D20050BE5D /* NZFadeImageView-Images.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8D1EE5A186333D20050BE5D /* NZFadeImageView-Images.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8A24590186369640020A7D3 /* NZFadeImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZFadeImageView.h; sourceTree = "<group>"; };
+		F8A24591186369640020A7D3 /* NZFadeImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZFadeImageView.m; sourceTree = "<group>"; };
 		F8D1EDEA18632E1B0050BE5D /* NZFadeImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NZFadeImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D1EDED18632E1B0050BE5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8D1EDEF18632E1B0050BE5D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -36,8 +38,6 @@
 		F8D1EE4B186330FF0050BE5D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8D1EE4C186330FF0050BE5D /* NZFadeImageView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NZFadeImageView-Info.plist"; sourceTree = "<group>"; };
 		F8D1EE4D186330FF0050BE5D /* NZFadeImageView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NZFadeImageView-Prefix.pch"; sourceTree = "<group>"; };
-		F8D1EE56186331930050BE5D /* NZFadeImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NZFadeImageView.h; path = Example/NZFadeImageView.h; sourceTree = SOURCE_ROOT; };
-		F8D1EE57186331930050BE5D /* NZFadeImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NZFadeImageView.m; path = Example/NZFadeImageView.m; sourceTree = SOURCE_ROOT; };
 		F8D1EE5A186333D20050BE5D /* NZFadeImageView-Images.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NZFadeImageView-Images.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,8 +137,8 @@
 		F8D1EE55186331400050BE5D /* NZFadeImageView */ = {
 			isa = PBXGroup;
 			children = (
-				F8D1EE56186331930050BE5D /* NZFadeImageView.h */,
-				F8D1EE57186331930050BE5D /* NZFadeImageView.m */,
+				F8A24590186369640020A7D3 /* NZFadeImageView.h */,
+				F8A24591186369640020A7D3 /* NZFadeImageView.m */,
 			);
 			path = NZFadeImageView;
 			sourceTree = "<group>";
@@ -220,7 +220,7 @@
 			files = (
 				F8D1EE4F186330FF0050BE5D /* NZAppDelegate.m in Sources */,
 				F8D1EE53186330FF0050BE5D /* main.m in Sources */,
-				F8D1EE58186331930050BE5D /* NZFadeImageView.m in Sources */,
+				F8A24592186369640020A7D3 /* NZFadeImageView.m in Sources */,
 				F8D1EE4E186330FF0050BE5D /* NZViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +364,7 @@
 				F8D1EE1E18632E1B0050BE5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

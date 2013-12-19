@@ -26,8 +26,8 @@
 {
     [super viewDidLoad];
     
-    [self.fadeView setAnimationDuration:2.25];
-    [self.fadeView setAnimateInterval:4.5];
+    [self.fadeView setAnimationDuration:.5];
+    [self.fadeView setAnimateInterval:.9];
 }
 
 - (void)viewWillAppear:(BOOL)animated

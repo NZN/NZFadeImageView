@@ -46,6 +46,11 @@ Alternatively you can directly add source files to your project.
   <img src="http://s9.postimg.org/61wrm1173/NZFade_Image_View.png" alt="NZFadeImageView" title="NZFadeImageView">
 </p>
 
+* Create plist `NZFadeImageView-Images.plist` and add images name at root array:
+
+<p align="center">
+  <img src="http://s8.postimg.org/ctu43a8z9/NZFade_Image_View.png" alt="NZFadeImageView" title="NZFadeImageView">
+</p>
 
 * Simple example of use in `UIViewController.m`:
 

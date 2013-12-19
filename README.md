@@ -3,10 +3,10 @@
 This class performs the rotation of images with effect fade-in, fade-out in a given time interval.
 This effect is usually applied in the application initial screen, usually on the login screen.
 
-GIF example:
+Video example:
 
 <p align="center">
-  <img src="http://s11.postimg.org/m7my4w3j5/NZFade_Image_View.gif" alt="NZFadeImageView" title="NZFadeImageView">
+  <a href="http://youtu.be/EomeqhtkgYY"><img src="http://s27.postimg.org/xij2mxp4j/NZFade_Image_View.png" alt="NZFadeImageView" title="NZFadeImageView"></a>
 </p>
 
 [![Build Status](https://api.travis-ci.org/NZN/NZFadeImageView.png)](https://api.travis-ci.org/NZN/NZFadeImageView.png)

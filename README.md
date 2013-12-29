@@ -1,4 +1,4 @@
-#NZFadeImageView
+#NZFadeImageView ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)
 
 This class performs the rotation of images with effect fade-in, fade-out in a given time interval.
 This effect is usually applied in the application initial screen, usually on the login screen.

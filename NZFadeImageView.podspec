@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'NZFadeImageView'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.license = 'MIT'
   s.summary = 'This class performs the rotation of images with fade-in/fade-out effects in a given time interval.'
   s.homepage = 'https://github.com/NZN/NZFadeImageView'
@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
   s.authors = { 'Bruno Tortato Furtado' => 'bruno.furtado@gruponzn.com' }
   
   s.source_files = 'NZFadeImageView/*.{h,m}'
-  s.source = { :git => 'https://github.com/NZN/NZFadeImageView.git', :tag => '0.0.1' }  
+  s.source = { :git => 'https://github.com/NZN/NZFadeImageView.git', :tag => '0.0.2' }  
 end

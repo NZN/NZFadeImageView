@@ -23,9 +23,6 @@ static NSString* const kResource = @"NZFadeImageView-Images";
 - (void)setAnimateInterval:(CGFloat)animateInterval
                   animated:(BOOL)animated;
 
-- (void)startAnimationAnimated;
-
-
 @end
 
 
@@ -41,7 +38,7 @@ static NSString* const kResource = @"NZFadeImageView-Images";
     
     if (self) {
         self.names = [[NSMutableArray alloc] init];
-                
+        
         NSString *path = [[NSBundle mainBundle] pathForResource:kResource ofType:@"plist"];
         NSArray *array = [[NSArray alloc] initWithContentsOfFile:path];
         
@@ -51,34 +48,11 @@ static NSString* const kResource = @"NZFadeImageView-Images";
         
         [self setAnimateInterval:kAnimateInterval];
         [self setAnimateDuration:kAnimateDuration];
-        
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1*NSEC_PER_SEC), dispatch_get_global_queue(0, 0),
-        ^{
-            [[NSNotificationCenter defaultCenter] addObserver:self
-                                                     selector:@selector(startAnimationAnimated)
-                                                         name:UIApplicationDidBecomeActiveNotification
-                                                       object:nil];
-            
-            [[NSNotificationCenter defaultCenter] addObserver:self
-                                                     selector:@selector(stopAnimation)
-                                                         name:UIApplicationWillResignActiveNotification
-                                                       object:nil];
-        });
     }
     
     return self;
 }
-
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-    
-    [self setAnimateInterval:0];
-    [self setAnimationDuration:0];
-    [self setNames:nil];
-    [self setTimer:nil];
-}
-
+ 
 #pragma mark -
 #pragma mark - Public methods
 
@@ -151,11 +125,6 @@ static NSString* const kResource = @"NZFadeImageView-Images";
                                                 userInfo:nil
                                                  repeats:YES];
     
-}
-
-- (void)startAnimationAnimated
-{
-    [self setAnimateInterval:_animateInterval animated:YES];
 }
 
 @end

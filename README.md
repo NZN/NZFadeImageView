@@ -12,6 +12,7 @@ Video example:
 [![Build Status](https://api.travis-ci.org/NZN/NZFadeImageView.png)](https://api.travis-ci.org/NZN/NZFadeImageView.png)
 [![Cocoapods](https://cocoapod-badges.herokuapp.com/v/NZFadeImageView/badge.png)](http://beta.cocoapods.org/?q=NZFadeImageView)
 [![Cocoapods](https://cocoapod-badges.herokuapp.com/p/NZFadeImageView/badge.png)](http://beta.cocoapods.org/?q=NZFadeImageView)
+[![Analytics](https://ga-beacon.appspot.com/UA-48753665-1/NZN/NZFadeImageView/README.md)](https://github.com/igrigorik/ga-beacon)
 
 ## Requirements
 

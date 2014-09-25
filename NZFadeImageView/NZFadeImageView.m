@@ -83,7 +83,10 @@ static NSString* const kResource = @"NZFadeImageView-Images";
         UIImage *image = [self.names objectAtIndex:i];
         float plusFinalAnimateDuration = self.animateDuration/2;
         
-        if ([self.image isEqual:image]) {
+        NSData *currentImage = UIImageJPEGRepresentation(self.image, 1);
+        NSData *newImage = UIImageJPEGRepresentation(image, 1);
+        
+        if ([currentImage isEqualToData:newImage]) {
             int nextIndex = i+1;
             
             if (nextIndex >= [self.names count]) {
@@ -105,6 +108,8 @@ static NSString* const kResource = @"NZFadeImageView-Images";
             [NSThread sleepForTimeInterval:(self.animateDuration*2) + plusFinalAnimateDuration];
             
             break;
+        } else {
+            NSLog(@"diferente");
         }
     }
 }
